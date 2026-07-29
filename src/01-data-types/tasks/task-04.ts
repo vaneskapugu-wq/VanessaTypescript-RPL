@@ -10,3 +10,52 @@
  * 
  * display the book data using console.log.
  */
+
+
+
+
+interface Books{
+     Title:String; // judul 
+     AuthorsName:String;// Nama Penulis
+     ISBNNumber:String; // ISBN
+     PagesTotal:number;
+     CategoryBook:String;
+     IsAvailable:Boolean;//
+     
+}
+
+
+
+const book1 : Books ={
+     Title: "Matematika",
+     AuthorsName:"Via",
+     ISBNNumber:"V1ias",
+     PagesTotal:5,
+     CategoryBook:"Pelajaran",
+     IsAvailable:true,
+};
+
+// book1.AuthorsName
+
+const book2 : Books ={
+     Title: "Sejarah",
+     AuthorsName:"sysca",
+     ISBNNumber:"Scsy34",
+     PagesTotal:20,
+     CategoryBook:"Pelajaran",
+     IsAvailable:true,
+};
+const book3 : Books ={
+     Title: "Bahasa Inggris",
+     AuthorsName:"Lyla",
+     ISBNNumber:"Ly783d",
+     PagesTotal:15,
+     CategoryBook:"Pelajaran",
+     IsAvailable:true,
+};
+console.log("===Book Data===");
+console.log({
+     book1,
+     book2,
+     book3,
+});

@@ -8,9 +8,42 @@
  * so this information should also be stored.
  * 
  * Task:
- * 
+ * npm run example src\01-data-types\tasks\task-01.ts (cara jalankan)
  * 1. dentify all values that should be stored as variables.
  * 2. Determine the most appropriate data type for each variable.
  * 3. Create the variable declarations using TypeScript.
  * 4. Display the student data using console.log.
  */
+const StudentName: string = "Nadia Putri";
+const IdStudent: string =" ST2026045"
+
+const Nilaimidterm : number= 84
+const NilaiFinal : number= 91.5
+const Assignments : number= 88.5
+const AttendanceScore : number=100
+
+const participatesInExtracurricular : boolean = true
+
+console.log("=== Student Information ===");
+console.log({
+    StudentName,
+    IdStudent,
+    NilaiFinal,
+    Assignments,
+    Nilaimidterm,
+    AttendanceScore,
+    participatesInExtracurricular,
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,3 +9,35 @@
  * 
  * display the student data using console.log.
  */
+interface Student{
+    IdStudent:string;
+    FullName:string;
+    Age:number;
+    isActiveStudent:boolean;
+};
+const student1 : Student = {
+    IdStudent: "ST2026001",
+    FullName:"Gaby zyz",
+    Age:18,
+    isActiveStudent: true,
+};
+const student2 : Student = {
+    IdStudent: "ST2326001",
+    FullName:"violan etio",
+    Age:16,
+    isActiveStudent: true,
+};
+const student3 : Student = {
+    IdStudent: "ST2026013",
+    FullName:"vylafor ryska",
+    Age:17,
+    isActiveStudent: true,
+};
+console.log("===Student Data===");
+console.log({
+    student1,
+    student2,
+    student3,
+});
+
+

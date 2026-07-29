@@ -14,3 +14,16 @@
  * 2. Store the participant data in a single collection.
  * 3. Display the participant data using console.log.
  */
+interface Participiant{
+    StudentID:String;
+    StudentName:String;
+    Age:number;
+    IsPaid:Boolean;
+}
+const participiant:Participiant[]=[
+    {StudentID:"ST001",StudentName:"Ahmad Fauzi",Age:16,IsPaid:true},
+    {StudentID:"ST002",StudentName:"Siti Nurhaliza",Age:17,IsPaid:true},  
+    {StudentID:"ST003",StudentName:"Budi Santoso",Age:16,IsPaid:true},  
+]
+console.log("===Participiant Information===");
+console.log(participiant);

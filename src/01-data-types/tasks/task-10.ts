@@ -16,3 +16,18 @@
  * 2. Store the product data in a single collection.
  * 3. Display the product data using console.log.
  */
+interface Product{
+    CodeProduct:String;
+    NameProduct:String;
+    Price:number;
+    Quantity:number;
+    FreeShipping:boolean;
+}
+const product:Product[]=[
+    {CodeProduct:"KB001", NameProduct:"Mechanical Keyboard", Price:850000, Quantity:1,FreeShipping:true},
+    {CodeProduct:"MS002", NameProduct:"Wireless Mouse", Price:275000, Quantity:2,FreeShipping:true},
+    {CodeProduct:"HD003", NameProduct:"External SSD 1TB", Price:1650000, Quantity:1,FreeShipping:true},
+    {CodeProduct:"HP004", NameProduct:"Gaming Headset", Price: 720000, Quantity:1,FreeShipping:true},
+]
+console.log("===Product Information===")
+console.log(product);

@@ -3,10 +3,8 @@
  *
  * Run: npm run example src/01-data-types/examples/basic-types.ts
  */
-
 // Primitive types
 const studentName: string = "Alice";
-const age: number = 20;
 const isEnrolled: boolean = true;
 
 // Arrays
@@ -43,7 +41,7 @@ let emptyValue: null = null;
 let notAssigned: undefined = undefined;
 
 console.log("=== Basic Types ===");
-console.log({ studentName, age, isEnrolled });
+console.log({ studentName, isEnrolled });
 console.log({ scores, subjects });
 console.log({ studentRecord, grade: Grade.A });
 logMessage("Data types example completed!");
