@@ -16,13 +16,17 @@
 
  */
 
+const finalScore: number = 82;
+const attendance: number = 94;
+const tuitionPaid: boolean = true;
+
+const isEligible: boolean =
+  finalScore >= 75 && attendance >= 90 && tuitionPaid;
+
+console.log("Final Score:", finalScore);
+console.log("Attendance:", attendance + "%");
+console.log("Tuition Paid:", tuitionPaid);
+console.log("isEligible:", isEligible);
 
 
-
-Jika final score >= 75 maka dia isEligible jika tidak maka isNotEligible
-
-Jika attendance >= 90 maka dia isEligible jika tidak maka isNotEligible
-
-
-Jika Tuition Paid = "Yes" maka dia isEligible jika tidak maka isNotEligible
 

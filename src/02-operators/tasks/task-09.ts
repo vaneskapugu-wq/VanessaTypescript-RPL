@@ -34,3 +34,58 @@
  * - Free shipping eligibility
 
  */
+const keyboardPrice: number = 850000;
+const keyboardQty: number = 1;
+
+const mousePrice: number = 275000;
+const mouseQty: number = 2;
+
+const monitorStandPrice: number = 420000;
+const monitorStandQty: number = 1;
+
+const voucherValue: number = 100000;
+const isPremium: boolean = true;
+const rewardPointRate: number = 50000;
+const vatRate: number = 0.11;
+
+// Product subtotal
+const productSubtotal: number =
+  (keyboardPrice * keyboardQty) +
+  (mousePrice * mouseQty) +
+  (monitorStandPrice * monitorStandQty);
+
+// Membership discount
+const membershipDiscount: number =
+  isPremium ? productSubtotal * 0.10 : 0;
+
+// Voucher deducted after membership discount
+const paymentAfterDiscount: number =
+  productSubtotal - membershipDiscount;
+
+const paymentBeforeTax: number =
+  paymentAfterDiscount - voucherValue;
+
+// VAT
+const vat: number = paymentBeforeTax * vatRate;
+
+// Final payment
+const finalPayment: number =
+  paymentBeforeTax + vat;
+
+// Reward points
+const rewardPoints: number =
+  Math.floor(paymentBeforeTax / rewardPointRate);
+
+// Free shipping eligibility
+const freeShipping: boolean =
+  isPremium || paymentBeforeTax > 1500000;
+
+console.log("=== Online Marketplace Checkout ===");
+console.log("Product Subtotal:", productSubtotal);
+console.log("Membership Discount:", membershipDiscount);
+console.log("Voucher Deduction:", voucherValue);
+console.log("Payment Before Tax:", paymentBeforeTax);
+console.log("VAT:", vat);
+console.log("Final Payment:", finalPayment);
+console.log("Reward Points:", rewardPoints);
+console.log("Free Shipping:", freeShipping);

@@ -22,3 +22,48 @@
  *  - Calculate the final payment.
 
  */
+const keyboardPrice: number = 850000;
+const keyboardQty: number = 1;
+
+const mousePrice: number = 275000;
+const mouseQty: number = 2;
+
+const mousePadPrice: number = 120000;
+const mousePadQty: number = 1;
+
+const isPremium: boolean = true;
+
+// Calculate subtotal
+const subtotal: number =
+  (keyboardPrice * keyboardQty) +
+  (mousePrice * mouseQty) +
+  (mousePadPrice * mousePadQty);
+
+// Count total purchased items using increment operator
+let totalItems: number = 0;
+
+for (let i = 0; i < keyboardQty; i++) {
+  totalItems++;
+}
+
+for (let i = 0; i < mouseQty; i++) {
+  totalItems++;
+}
+
+for (let i = 0; i < mousePadQty; i++) {
+  totalItems++;
+}
+
+// Determine discount
+const hasDiscount: boolean = subtotal > 1000000;
+const discount: number = hasDiscount ? subtotal * 0.10 : 0;
+
+// Calculate final payment
+const finalPayment: number = subtotal - discount;
+
+console.log("=== Shopping Cart ===");
+console.log("Subtotal:", subtotal);
+console.log("Total Items:", totalItems);
+console.log("Discount:", discount);
+console.log("Free Shipping:", isPremium);
+console.log("Final Payment:", finalPayment);
